@@ -21,7 +21,10 @@ public class BeerSong {
         
         for(int x = 99; x > 0; x--){
             System.out.println(x+" bottles of beer on the wall, "+x+" bottles of beer");
-            System.out.println("take one down, pass it around, "+(x-1)+" bottles of beer on the wall.");
+            if (x ==1){
+                System.out.println("take one down, pass it around, no more bottles of beer on the wall.");
+            }else
+            System.out.println("take one down, pass it around, "+(x-1)+" bottles of beer on the wall.");            
         }
         
     }
